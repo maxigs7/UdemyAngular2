@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent {
-  title = 'Body';
+  showNgIf: boolean = false;
+
+  sentence: any = {
+    text: 'A great power requires great responsibility',
+    author: 'Ben Parker'
+  }
+
+  characters: string[] = ['Spiderman', 'Dr. Octopus', 'Venom']
+
+  toggleNgIf() {
+    this.showNgIf = !this.showNgIf;
+  }
 }
