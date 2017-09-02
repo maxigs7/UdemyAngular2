@@ -1,0 +1,110 @@
+<div class="container">
+  <h1>Pipes</h1>
+  <hr>
+
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Variable</th>
+        <th>Pipe</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{name}}</td>
+        <td>uppercase</td>
+        <td>{{name | uppercase}}</td>
+      </tr>
+      <tr>
+        <td>{{name}}</td>
+        <td>lowercase</td>
+        <td>{{name | lowercase}}</td>
+      </tr>
+      <tr>
+        <td>{{name}}</td>
+        <td>slice:3</td>
+        <td>{{name | slice:3}}</td>
+      </tr>
+      <tr>
+        <td>{{name}}</td>
+        <td>slice:0:3</td>
+        <td>{{name | slice:0:3}}</td>
+      </tr>
+      <tr>
+        <td>{{array}}</td>
+        <td>slice:1:5</td>
+        <td>{{array | slice:1:5}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number</td>
+        <td>{{PI | number}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number:'3.0-0'</td>
+        <td>{{PI | number:'3.0-0'}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number:'1.0-2'</td>
+        <td>{{PI | number:'1.0-2'}}</td>
+      </tr>
+      <tr>
+        <td>{{percentage}}</td>
+        <td>percent</td>
+        <td>{{percentage | percent}}</td>
+      </tr>
+      <tr>
+        <td>{{percentage}}</td>
+        <td>percent:'2.2-2'</td>
+        <td>{{percentage | percent:'2.2-2'}}</td>
+      </tr>
+      <tr>
+        <td>{{money}}</td>
+        <td>currency</td>
+        <td>{{money | currency}}</td>
+      </tr>
+      <tr>
+        <td>{{money}}</td>
+        <td>currency:'EUR'</td>
+        <td>{{money | currency:'EUR'}}</td>
+      </tr>
+      <tr>
+        <td>{{money}}</td>
+        <td>currency:'EUR':true</td>
+        <td>{{money | currency:'EUR':true}}</td>
+      </tr>
+      <tr>
+        <td>{{money}}</td>
+        <td>currency:'EUR':true:'4.0-0'</td>
+        <td>{{money | currency:'EUR':true:'4.0-0'}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number:'.0-0'</td>
+        <td>{{PI | number:'.0-0'}}</td>
+      </tr>
+      <tr>
+        <td>{{promise}}</td>
+        <td>async</td>
+        <td>{{promise | async}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Slice</h2>
+  <ul>
+    <li *ngFor="let item of array | slice:5:20">
+      {{item}}
+    </li>
+  </ul>
+
+  <h2>JSON</h2>
+  <pre>
+    <code>
+{{hero | json}}
+    </code>
+  </pre>
+</div>
