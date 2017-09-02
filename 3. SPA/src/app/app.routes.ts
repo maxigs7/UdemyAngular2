@@ -1,3 +1,4 @@
+import { SearchComponent } from './components/search/search.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
@@ -7,6 +8,7 @@ import { RouterModule, Routes } from "@angular/router";
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
+    { path: 'search/:q', component: SearchComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'hero/:id', component: HeroComponent },
 

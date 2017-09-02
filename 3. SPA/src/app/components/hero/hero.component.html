@@ -4,8 +4,7 @@
 
 <nav class="navbar navbar-dark bg-dark animated fadeIn fast">
   <div class="container">
-    <span class="h1" class="navbar-brand mb-0">{{hero.name}}</span>
-    <span class="navbar-text">{{hero.birthDate}}</span>
+    <span class="h1" class="navbar-brand mb-0">{{hero.name | uppercase}} ({{hero.birthDate | date:'y'}})</span>
   </div>
 </nav>
 <div class="container">

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Searching: <small>{{query}}</small></h1>
+  <hr>
+  <div class="alert alert-info animated fadeIn fast" role="alert" *ngIf="!heroes.length">
+    No results were found with "{{query}}"
+  </div>
+  <div class="card-columns">
+    <div class="card animated fadeIn fast" *ngFor="let hero of heroes; let i = index">
+      <img class="card-img-top" [src]="hero.img" [alt]="hero.name">
+      <div class="card-body">
+        <h4 class="card-title">{{ hero.name }}</h4>
+        <p class="card-text">{{hero.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{hero.birthDate}}</small></p>
+
+        <a [routerLink]="['/hero', i]" class="btn btn-outline-primary btn-block">See more...</a>
+      </div>
+    </div>
+  </div>
+</div>
