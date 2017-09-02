@@ -1,3 +1,23 @@
-<p>
-  hero works!
-</p>
+<div class="animated fadeIn fast cover" [ngClass]="{ 'cover-dc': hero.type === 'DC', 'cover-marvel': hero.type === 'Marvel'}">
+
+</div>
+
+<nav class="navbar navbar-dark bg-dark animated fadeIn fast">
+  <div class="container">
+    <span class="h1" class="navbar-brand mb-0">{{hero.name}}</span>
+    <span class="navbar-text">{{hero.birthDate}}</span>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 animated fadeIn">
+      <img [src]="hero.img" [alt]="hero.name" class="img-fluid">
+    </div>
+    <div class="col-md-9 animated fadeIn">
+      <p class="hero-bio">
+        {{hero.bio}}
+      </p>
+      <a [routerLink]="['/heroes']" class="btn btn-outline-primary">Go back</a>
+    </div>
+  </div>
+</div>
