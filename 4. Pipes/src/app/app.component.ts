@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = 'Maxkiller';
+  fullname: string = 'maxi gonzalez schweizer';
+  lorem: string = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam recusandae mollitia nobis, autem expedita aliquid maxime animi praesentium explicabo adipisci soluta quam harum? Adipisci nisi unde fugit expedita commodi ad.';
 
   PI: number = Math.PI;
 
@@ -31,4 +33,11 @@ export class AppComponent {
       resolve('Im done');
     }, 3500);
   });
+
+  date: Date = new Date();
+
+  video: string = 'b5mvJvlTEUQ';
+
+  password: string = 'password';
+
 }

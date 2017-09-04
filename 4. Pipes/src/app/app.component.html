@@ -22,6 +22,11 @@
         <td>{{name | lowercase}}</td>
       </tr>
       <tr>
+        <td>{{fullname}}</td>
+        <td>titlecase</td>
+        <td>{{fullname | titlecase}}</td>
+      </tr>
+      <tr>
         <td>{{name}}</td>
         <td>slice:3</td>
         <td>{{name | slice:3}}</td>
@@ -91,6 +96,43 @@
         <td>async</td>
         <td>{{promise | async}}</td>
       </tr>
+      <tr>
+        <td>{{date}}</td>
+        <td>date</td>
+        <td>{{date | date}}</td>
+      </tr>
+      <tr>
+        <td>{{date}}</td>
+        <td>date:'medium'</td>
+        <td>{{date | date:'medium'}}</td>
+      </tr>
+      <tr>
+        <td>{{date}}</td>
+        <td>date:'MMMM - dd'</td>
+        <td>{{date | date:'MMMM - dd'}}</td>
+      </tr>
+      <tr>
+        <td>{{lorem}}</td>
+        <td>ellipsis</td>
+        <td>{{lorem | ellipsis}}</td>
+      </tr>
+      <tr>
+        <td>{{fullname}}</td>
+        <td>ellipsis:5</td>
+        <td>{{fullname | ellipsis:5}}</td>
+      </tr>
+      <tr>
+        <td>{{password}}</td>
+        <td>
+          password
+          <button type="button" (click)="show = !show">
+            Show/Hide
+          </button>
+        </td>
+        <td>
+          {{password | password:show}}
+        </td>
+      </tr>
     </tbody>
   </table>
 
@@ -107,4 +149,8 @@
 {{hero | json}}
     </code>
   </pre>
+
+  <h2>Youtube</h2>
+
+  <iframe width="560" height="315" [src]="video | secureDom:'https://www.youtube.com/embed/'" frameborder="0" allowfullscreen></iframe>
 </div>
