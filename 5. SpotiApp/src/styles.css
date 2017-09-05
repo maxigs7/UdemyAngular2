@@ -31,6 +31,26 @@ hr{
   }
 }
 
+@media (min-width: 980px) {
+  .card-columns {
+      -webkit-column-count: 4;
+      column-count: 4;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 979px) {
+  .card-columns {
+      -webkit-column-count: 3;
+      column-count: 3;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .card-columns {
+      -webkit-column-count: 2;
+      column-count: 2;
+  }
+}
 
 .main-container{
   margin-top: 30px;
