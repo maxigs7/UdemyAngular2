@@ -25,6 +25,12 @@ hr{
   background-size: cover;
 }
 
+.track-item .badge {
+    position: absolute;
+    top: 0;
+    padding: 10px 5px;
+}
+
 @media (max-width: 600px) {
   .carousel-item {
     height: 280px;

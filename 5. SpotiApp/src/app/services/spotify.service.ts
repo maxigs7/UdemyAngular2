@@ -5,7 +5,7 @@ import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class SpotifyService {
-  static TOKEN: string = 'BQDybQzFDUSAz7vSb14sL1Izlx21yoFnmmszXtnJo_v3tLe1DUDkYXC3uLNsBVbbnCTKZeFgASfgMhq42Kat-Q';
+  static TOKEN: string = 'BQD0Mmb5oF3JynCMorjf7h4gvQ9bP_5nlOV54_ejGtupOZje6tUQNp8WK5y-O_juMgO7on0ajn2yLfpErGAGPA';
 
   urlSearch: string = 'https://api.spotify.com/v1/search';
   urlArtist: string = 'https://api.spotify.com/v1/artists/';

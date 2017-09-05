@@ -1,3 +1,4 @@
+import { SecureDomPipe } from './pipes/secure-dom.pipe';
 import { NoImagePipe } from './pipes/no-image.pipe';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -19,6 +20,7 @@ import { ArtistComponent } from './components/artist/artist.component';
     SearchComponent,
     NavbarComponent,
     NoImagePipe,
+    SecureDomPipe,
     ArtistComponent
   ],
   imports: [

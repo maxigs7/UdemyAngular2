@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './artist.component.html'
 })
 export class ArtistComponent implements OnInit {
-  artist: any = {};
+  artist: any;
   tracks: any[];
+  trackActive: any;
 
   constructor(
     private spotifyService: SpotifyService,
